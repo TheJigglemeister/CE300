@@ -1,0 +1,70 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="libraries - mrbsm\ce300specific.c">
+			<CompileAs>CompileAsC</CompileAs>
+		</ClCompile>
+		<ClCompile Include="libraries - mrbsm\generalcodes.c">
+			<CompileAs>CompileAsC</CompileAs>
+		</ClCompile>
+		<ClCompile Include="main.c">
+			<CompileAs>CompileAsC</CompileAs>
+		</ClCompile>
+	</ItemGroup>
+	<PropertyGroup>
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v142</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+		<TargetName>MRBSM</TargetName>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v142</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+		<TargetName>MRBSM</TargetName>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v142</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+		<TargetName>MRBSM</TargetName>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v142</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+		<TargetName>MRBSM</TargetName>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ConfigurationType>Application</ConfigurationType>
+		<PlatformToolset>v142</PlatformToolset>
+		<CharacterSet>MultiByte</CharacterSet>
+		<OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+		<TargetName>MRBSM</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<Optimization>Disabled</Optimization>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<Optimization>MaxSpeed</Optimization>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>
