@@ -75,22 +75,22 @@
   <PropertyGroup Label="UserMacros" />
 
 	<ItemGroup>
-		<ClCompile Include="ce300specific\ce300specific.c">
+		<ClCompile Include="libraries - mrbsm\ce300specific.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
-		<ClCompile Include="ce300specific_SPH\ce300specific_SPH.c">
+		<ClCompile Include="libraries - sph\ce300specific_SPH.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
-		<ClCompile Include="generalcodes_MRBSM\generalcodes_MRBSM.c">
+		<ClCompile Include="libraries - mrbsm\generalcodes_MRBSM.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
-		<ClCompile Include="generalcodes_SPH\generalcodes_SPH.c">
+		<ClCompile Include="libraries - sph\generalcodes_SPH.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
-		<ClCompile Include="main-mrbsm\main-mrbsm.c">
+		<ClCompile Include="main-mrbsm.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
-		<ClCompile Include="main-sph\main-sph.c">
+		<ClCompile Include="main-sph.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
 		<ClCompile Include="main.c">
