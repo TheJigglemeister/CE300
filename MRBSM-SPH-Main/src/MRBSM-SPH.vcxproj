@@ -99,6 +99,9 @@
 		<ClCompile Include="main.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
+		<None Include="loads.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

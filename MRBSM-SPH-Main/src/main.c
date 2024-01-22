@@ -19,6 +19,7 @@ int main()
 goto yeet;
 /**SPH ALGORITHM**/
 {
+
     /**SPH INPUT PARAMETERS**/
     int argc;   char** argv;
     double t_sph=0;
@@ -53,6 +54,7 @@ goto yeet;
 
 /**MRBSM ALGORITHM**/
 {
+yeet:
     rigidbody*R;
     R = calloc(sizeof(rigidbody),1);
     default_mrbsm(R);
@@ -67,6 +69,11 @@ goto yeet;
         /** store load info; future: remove/replace with "reactive" data storing, from SPH output**/
     FILE* loadinput;
     errno_t err = fopen_s(&loadinput, "loads.txt", "r");
+    if (err != 0) {
+        // Handle file opening error
+        printf("Error opening file: loads.txt\n");
+        return 1; // or any other appropriate error code
+    }
     fscanf_s(loadinput,"%d",&nData);  //record the first line of the input file, store as data count
     appliedforce*F;
     F=calloc(sizeof(appliedforce),1);
@@ -172,7 +179,7 @@ return 1235;
 }
 
 
-yeet:
+//yeet:
 
     return 0;
 }
