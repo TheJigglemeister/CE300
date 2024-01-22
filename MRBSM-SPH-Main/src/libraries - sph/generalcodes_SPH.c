@@ -130,7 +130,7 @@ int AllocateLoad(FILE* fp, double*u, double *px, double *py, int nData)
 
     for(i=0;i<nData;i++)
     {
-        fscanf_s(fp,"%lf\t%lf\t%lf",&u[i],&px[i], &py[i]);    //per time basis
+        fscanf(fp,"%lf\t%lf\t%lf",&u[i],&px[i], &py[i]);    //per time basis
         count++;
     }
     rewind(fp);
