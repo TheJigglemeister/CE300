@@ -2,6 +2,9 @@
 /**http://www.cs.cornell.edu/~bindel/class/cs5220-f11/code/sph.pdf**/
 /**for 2D, as of Sep 2021**/
 
+#ifndef MAIN_SPH_H
+#define MAIN_SPH_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -100,3 +103,5 @@ void flip(double*x,   //subject vector
 double** main_sph(int argc, char** argv
                   , sim_param_t params, sim_state_t* state, double t
                   );
+
+#endif // MAIN_SPH_H

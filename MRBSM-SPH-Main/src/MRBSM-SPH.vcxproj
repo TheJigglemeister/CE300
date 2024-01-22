@@ -87,6 +87,9 @@
 		<ClCompile Include="libraries - sph\generalcodes_SPH.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
+		<ClCompile Include="getopt.c">
+			<CompileAs>CompileAsC</CompileAs>
+		</ClCompile>
 		<ClCompile Include="main-mrbsm.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>

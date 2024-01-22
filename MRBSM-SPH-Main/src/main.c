@@ -3,9 +3,6 @@
 #include <math.h>
 #include <string.h>
 
-
-
-#include <stdio.h>
 #include "main-sph.h"
 #include "main-mrbsm.h"
 
@@ -180,7 +177,7 @@ yeet:
     return 0;
 }
 
-void trash()
+int trash()
 {
     int i;
 

@@ -9,9 +9,13 @@
 #include <assert.h>
 #include <time.h>
 
+#ifndef M_PI
+#define M_PI (3.14159265358979323846)
+#endif
 
 //#include (up 1 level, include \MRBSM\MRBSM.h)
 #include ".\libraries - mrbsm\ce300specific_MRBSM.h"
+#include "getopt.h"
 
 #define VERSION_TAG "SPHView00"
 
@@ -486,7 +490,8 @@ int get_params(int argc, char** argv, sim_param_t* params)
             return -1;
 
             case 'o':
-            strcpy(params->fname = malloc(strlen(optarg)+1), optarg);
+            params->fname = malloc(strlen(optarg) + 1);
+            strcpy_s(params->fname, strlen(optarg) + 1, optarg);
 
             break;
             get_int_arg('F', nframes);

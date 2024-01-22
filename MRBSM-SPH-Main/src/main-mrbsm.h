@@ -1,3 +1,6 @@
+#ifndef MAIN_MRBSM_H
+#define MAIN_MRBSM_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -10,3 +13,5 @@
 
 
 double** main_mrbsm();
+
+#endif // MAIN_MRBSM_H
