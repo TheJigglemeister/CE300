@@ -34,7 +34,8 @@ double** main_mrbsm()
 
     double *t, *y0, **resp, SPHx=0, SPHy=0;
 
-    FILE*fp=fopen_s("loads.txt","r");
+    FILE* fp;
+    errno_t err = fopen_s(&fp, "loads.txt", "r");
 
     if(fp==NULL)
     {
@@ -76,7 +77,7 @@ double** main_mrbsm()
 
     y0=NewVector(nEqn);
     FILE*outputfile;
-    outputfile = fopen_s("results.csv","w");
+    errno_t err_2 = fopen_s(&outputfile, "results.csv","w");
 
     //for some reason, cannot create csv file after this line
     resp = LeapFrog(
