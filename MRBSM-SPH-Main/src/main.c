@@ -32,7 +32,7 @@ goto yeet;
     if (get_params(argc, argv, &params) != 0)
     exit(-1);
     sim_state_t* state = init_particles(&params);
-    FILE* fp = fopen(params.fname, "w");
+    FILE* fp = fopen_s(params.fname, "w");
 
     /**data headers + initial step t0**/
     write_header(fp, state->n);
@@ -67,8 +67,8 @@ goto yeet;
         resp[i]=calloc(sizeof(double),nComp);
     }
         /** store load info; future: remove/replace with "reactive" data storing, from SPH output**/
-    FILE*loadinput=fopen("loads.txt","r");
-    fscanf(loadinput,"%d",&nData);  //record the first line of the input file, store as data count
+    FILE*loadinput= fopen_s("loads.txt","r");
+    fscanf_s(loadinput,"%d",&nData);  //record the first line of the input file, store as data count
     appliedforce*F;
     F=calloc(sizeof(appliedforce),1);
     default_load(F, nData);
@@ -208,8 +208,8 @@ void trash()
     }
 
     /** store load info; future: remove/replace with "reactive" data storing, from SPH output**/
-    FILE*loadinput=fopen("loads.txt","r");
-    fscanf(loadinput,"%d",&nData);  //record the first line of the input file, store as data count
+    FILE*loadinput= fopen_s("loads.txt","r");
+    fscanf_s(loadinput,"%d",&nData);  //record the first line of the input file, store as data count
     default_load(F, nData);
 
     double *nothing=calloc(sizeof(double),nData);
