@@ -363,7 +363,7 @@ currently: unit box**/
 
     double x, y;
     FILE*XYCheck;
-    XYCheck = fopen("bindel_XY.csv", "w");
+    XYCheck = fopen_s("bindel_XY.csv", "w");
 
     // Count mesh points that fall in indicated region.
     int count = 0;
@@ -606,7 +606,7 @@ double** main_sph(int argc, char** argv, sim_param_t params, sim_state_t* state,
     int i, count=0;
 
 
-    FILE* fp = fopen(params.fname, "a");
+    FILE* fp = fopen_s(params.fname, "a");
 
     int nframes = params.nframes;
     int npframe = params.npframe;
