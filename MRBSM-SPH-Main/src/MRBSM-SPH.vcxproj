@@ -75,7 +75,7 @@
   <PropertyGroup Label="UserMacros" />
 
 	<ItemGroup>
-		<ClCompile Include="libraries - mrbsm\ce300specific.c">
+		<ClCompile Include="libraries - mrbsm\ce300specific_MRBSM.c">
 			<CompileAs>CompileAsC</CompileAs>
 		</ClCompile>
 		<ClCompile Include="libraries - sph\ce300specific_SPH.c">
