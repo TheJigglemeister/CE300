@@ -9,6 +9,7 @@
 #include <assert.h>
 #include <time.h>
 
+#define M_PI (3.14159265358979323846264338327950288)
 
 //#include (up 1 level, include \MRBSM\MRBSM.h)
 #include ".\libraries - mrbsm\ce300specific_MRBSM.h"
