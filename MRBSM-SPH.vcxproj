@@ -123,19 +123,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ce300specific_MRBSM.c" />
-    <ClCompile Include="ce300specific_SPH.c" />
-    <ClCompile Include="generalcodes_MRBSM.c" />
-    <ClCompile Include="generalcodes_SPH.c" />
+    <ClCompile Include="libraries - mrbsm\ce300specific_MRBSM.c" />
+    <ClCompile Include="libraries - sph\ce300specific_SPH.c" />
+    <ClCompile Include="libraries - mrbsm\generalcodes_MRBSM.c" />
+    <ClCompile Include="libraries - sph\generalcodes_SPH.c" />
     <ClCompile Include="main-mrbsm.c" />
     <ClCompile Include="main-sph.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ce300specific_MRBSM.h" />
-    <ClInclude Include="ce300specific_SPH.h" />
-    <ClInclude Include="generalcodes_MRBSM.h" />
-    <ClInclude Include="generalcodes_SPH.h" />
+    <ClInclude Include="libraries - mrbsm\ce300specific_MRBSM.h" />
+    <ClInclude Include="libraries - sph\ce300specific_SPH.h" />
+    <ClInclude Include="libraries - mrbsm\generalcodes_MRBSM.h" />
+    <ClInclude Include="libraries - sph\generalcodes_SPH.h" />
     <ClInclude Include="main-mrbsm.h" />
     <ClInclude Include="main-sph.h" />
   </ItemGroup>
